@@ -9,8 +9,8 @@ public class Workspace {
 
 /*
 // For 1D Data ----------------------------------------------------------		
-//		String path = "OneDData_02_short.txt";
-		String path = "OneDData_02_long.txt";
+//		String path = "Assignment01_DataAnalysy\\OneDData_02_short.txt";
+		String path = "Assignment01_DataAnalysis\\OneDData_02_long.txt";
 		
 		ArrayList<String> dataString = reader.readFile(path);
 		ArrayList<MyPoint> dataPoints = reader.convertTo1D(dataString);
@@ -21,19 +21,19 @@ public class Workspace {
 			dataDouble[i] = dataPoints.get(i).getX();
 		}
 		StdAudio.play(dataDouble);
-
 */
+
 /*
 // For 2D Data ----------------------------------------------------------		
-//		String path = "TwoDData_02_short.txt";
-		String path = "TwoDData_02_long.txt";
+//		String path = "Assignment01_DataAnalysis\\TwoDData_02_short.txt";
+//		String path = "Assignment01_DataAnalysis\\TwoDData_02_long.txt";
 		
 		ArrayList<String> dataString = reader.readFile(path);
 		ArrayList<MyPoint> dataPoints = reader.convertTo2D(dataString);
 		
 		display.displayTwoD(dataPoints);
-		
-*/
+*/	
+
 /*
 // For 3D Data ----------------------------------------------------------
 		String path = "ThreeDData_02.txt";

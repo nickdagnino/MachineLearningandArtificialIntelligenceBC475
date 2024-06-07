@@ -3,6 +3,8 @@ import java.util.PriorityQueue;
 
 public class PathFinder {
 
+	DataDisplay drawPath = new DataDisplay();
+
 	/**
 	 * Breadth-First Search
 	 * @param cities
@@ -185,6 +187,7 @@ public class PathFinder {
 			count++;
 			
 			Path currentPath = frontier.poll();
+			drawPath.drawMapPath(currentPath);
 			City currentCity = currentPath.getLastCity();
 			
 			if(currentCity.equals(end)) {

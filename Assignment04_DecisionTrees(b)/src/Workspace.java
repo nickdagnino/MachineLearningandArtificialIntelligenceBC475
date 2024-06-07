@@ -9,7 +9,7 @@ public class Workspace {
 //		
 //		testNodes();
 		
-		testTreeBuilder("Restaurant_Data.csv", 10);
+//		testTreeBuilder("Assignment04_DecisionTrees(b)\\Restaurant_Data.csv", 10);
 
 	}
 	

@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+
 public class DataDisplay {
 
 	public int width = 2500;
@@ -34,6 +35,7 @@ public class DataDisplay {
 						double y1 = cities.get(k).getPoint().getY();
 
 						StdDraw.setPenColor(0, 255, 0);
+						StdDraw.setPenRadius(.01);
 						StdDraw.line(x, y, x1, y1);
 						StdDraw.setPenColor(0, 0, 0);
 						StdDraw.text((x + x1) / 2, (y + y1) / 2, d + "");
@@ -54,4 +56,53 @@ public class DataDisplay {
 
 	}
 
+	public void drawMapPath(Path path){
+
+		for(int i = 0; i < path.getRoute().size()-1; i++){
+
+			double x1 = path.getRoute().get(i).getPoint().getX();
+			double y1 = path.getRoute().get(i).getPoint().getY();
+
+			double x2 = path.getRoute().get(i+1).getPoint().getX();
+			double y2 = path.getRoute().get(i+1).getPoint().getY();
+
+			StdDraw.setPenColor(255, 0, 0);
+			StdDraw.line(x1, y1, x2, y2);
+
+			StdDraw.show();
+
+			try {
+
+			Thread.sleep(250);
+
+			} catch (InterruptedException e) {
+
+				System.err.println("Sleep interrupted: " + e.getMessage());
+
+			}
+			
+		}
+
+		for(int i = 0; i < path.getRoute().size()-1; i++){
+
+			double x1 = path.getRoute().get(i).getPoint().getX();
+			double y1 = path.getRoute().get(i).getPoint().getY();
+
+			double x2 = path.getRoute().get(i+1).getPoint().getX();
+			double y2 = path.getRoute().get(i+1).getPoint().getY();
+
+			StdDraw.setPenColor(0, 255, 0);
+			StdDraw.line(x1, y1, x2, y2);
+
+			StdDraw.show();
+			
+		}
+
+	}
+
+	public void displayMazeData(){}
+
+	public void displayTerrainData(){}
+
 }
+

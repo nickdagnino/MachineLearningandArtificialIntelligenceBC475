@@ -7,7 +7,7 @@ public class Workspace {
 		DataReader reader = new DataReader();
 		DataDisplay display = new DataDisplay();
 
-		String path = "romania.txt";
+		String path = "Assignment02_SearchingAlgorithms\\romania.txt";
 		
 		ArrayList<String> dataString = reader.readFile(path);
 		ArrayList<City> dataCities = reader.convertRomania(dataString);
@@ -15,7 +15,5 @@ public class Workspace {
 		display.displayRomaniaData(dataCities);
 
 	}
-
-		
 
 }

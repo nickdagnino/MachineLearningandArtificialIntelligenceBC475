@@ -12,6 +12,7 @@ public class Tester_00 {
 				String line = input.nextLine();
 				System.out.println(line);
 			}
+			input.close();
 		}
 		catch(Exception e) {
 			e.printStackTrace();
@@ -53,9 +54,9 @@ public class Tester_00 {
 		StdDraw.setPenColor(StdDraw.GREEN);
 		StdDraw.line(x0, y0, x1, y1);
 	
-		StdDraw.picture(width/2, height/2, "fish.jpg");
+		StdDraw.picture(width/2, height/2, "Assignment00_LibraryTest\\fish.jpg");
 		
-		StdAudio.play("beat.wav");
+		StdAudio.play("Assignment00_LibraryTest\\beat.wav");
 	}
 	
 
@@ -63,7 +64,7 @@ public class Tester_00 {
 		
 		Tester_00 tester = new Tester_00();
 		
-		String path = "data.txt";
+		String path = "Assignment00_LibraryTest\\data.txt";
 		tester.readAndPrintData(path);
 		
 		tester.testDraw();

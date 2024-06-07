@@ -9,7 +9,7 @@ public class Workspace {
 	public static void main(String[] args) {
 
 		
-		//String path = "romania.txt";
+		String path = "Assignment03_SearchingAlgorithms\\romania.txt";
 		//String path = "maze01-tiny.txt";
 		//String path = "maze02-tiny.txt";
 		//String path = "maze03-small.txt";
@@ -23,19 +23,22 @@ public class Workspace {
 		//String path = "terrain01-tiny.txt";
 		//String path  = "terrain10-huge.txt";
 		
-//		// -Romania-
-//		
-//		ArrayList<String> dataString = reader.readFile(path);
-//		ArrayList<City> dataCities = reader.convertRomania(dataString);
-//		
-//		display.displayRomaniaData(dataCities);
-//
-//		//Path p = finder.breadthFirstSearch(dataCities, "Lugoj", "Iasi");
-//		//Path p = finder.uniformCostSearch(dataCities, "Lugoj", "Iasi");
-//		Path p = finder.aStarSearch(dataCities, "Lugoj", "Iasi");
-//		System.out.println(p);
-//		System.out.println(p.getLength());
-//		// -Romania-
+		// -Romania-
+		
+		ArrayList<String> dataString = reader.readFile(path);
+		ArrayList<City> dataCities = reader.convertRomania(dataString);
+		
+		display.displayRomaniaData(dataCities);
+
+		//Path p = finder.breadthFirstSearch(dataCities, "Lugoj", "Iasi");
+		//Path p = finder.uniformCostSearch(dataCities, "Lugoj", "Iasi");
+		Path p = finder.aStarSearch(dataCities, "Lugoj", "Iasi");
+
+		//display.drawMapPath(p);
+
+		System.out.println(p);
+		System.out.println(p.getLength());
+		// -Romania-
 		
 //		// -Maze-
 //		
